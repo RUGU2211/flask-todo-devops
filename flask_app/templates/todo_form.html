@@ -1,0 +1,20 @@
+<!-- flask_app/templates/todo_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To-Do Form</title>
+</head>
+<body>
+  <h2>To-Do List - Add Item</h2>
+  <form action="/submittodoitem" method="POST">
+    <label for="itemName">Item Name:</label><br>
+    <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required><br><br>
+
+    <label for="itemDescription">Item Description:</label><br>
+    <textarea id="itemDescription" name="itemDescription" placeholder="Enter description" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
